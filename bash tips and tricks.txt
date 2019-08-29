@@ -1,0 +1,12 @@
+cl() {
+if [ -d "$1" -o "$1" == "-" ]; then
+  cd "$1"
+  ls -lah
+else
+  ls -lah
+fi
+alias ll='ls -lah'
+alias ..="cl .."
+alias ...="cl ../.."
+alias ....="cl ../../.."
+alias mps="/usr/usb/ps auxww"
