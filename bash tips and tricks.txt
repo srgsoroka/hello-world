@@ -5,6 +5,7 @@ if [ -d "$1" -o "$1" == "-" ]; then
 else
   ls -lah
 fi
+}
 alias ll='ls -lah'
 alias ..="cl .."
 alias ...="cl ../.."
